@@ -1,0 +1,446 @@
+/* start common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.navcontainer {
+    width: 1250px;
+    margin: 0 auto;
+}
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+/* common css end */
+
+/* hero part start */
+#herosection {
+    background: url(../images/banner.png) center center no-repeat;
+    background-size: cover;
+}
+
+/* header start */
+#herosection header .navcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navcontainer nav ul {
+    display: flex;
+    gap: 50px;
+}
+header .navcontainer nav ul li a {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Gentium Book Basic";
+    position: relative;
+}
+header .navcontainer nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 236%;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #ffffff;
+    transition: all .2s linear;
+}
+
+header .navcontainer nav ul li a:hover::after {
+    width: 100%;
+}
+/* header end */
+
+/* main banner start */
+.main-banner .container .banner-data h1 {
+    width: 970px;
+    height: 346px;
+    margin: 0 auto;
+    font-size: 90px;
+    padding-top: 130PX;
+    padding-bottom: 35PX;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+    filter: drop-shadow(0.469px 0.883px 1px rgba(1,1,1,0.64));
+}
+.main-banner .container .deco {
+    margin-top: 35px;
+    text-align: center;
+}
+.main-banner .container .banner-button ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+.main-banner .container .banner-button ul li {
+    padding-top: 15px;
+    text-align: center;
+    margin-bottom: 140px;
+}
+.main-banner .container .banner-button ul li a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    height: 55px;
+    width: 230px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 15px;
+    transition: all .1s linear;
+}
+.main-banner .container .banner-button ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+/* main banner end */
+
+/* food start */
+#food {
+    background: url(../images/sectowBGpatten.png) center center no-repeat;
+    background-size: cover;
+    background-color: #e4e4e4;
+}
+#food .container {
+    display: flex;
+    justify-content: space-between;
+}
+#food .container .leftside {
+    text-align: center;
+    padding-left: 70px;
+    padding-top: 100px;
+}
+#food .container .leftside h2 {
+    width: 430px;
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+    padding-bottom: 15px;
+}
+#food .container .leftside p {
+    width: 430px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: "Lato";
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+#food .container .leftside .cook img{
+    padding-left: 140px;
+}
+#food .container .rightside {
+    padding-top: 70px;
+}
+/* food end */
+
+/* ingredients start */
+#ingredients {
+    background: url(../images/s3-banner.png) center center no-repeat;
+    background-size: cover;
+}
+#ingredients .container {
+    padding: 100px 0 100px 0;
+}
+#ingredients .container .rightside {
+    width: 570px;
+    height: 560px;
+    background-color: rgba(0, 0, 0, 0.67);
+    margin: 0 0 0 auto;
+}
+#ingredients .container .rightside .allingre {
+    text-align: center;
+}
+#ingredients .container .rightside .allingre h2 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    padding-top: 80px;
+    padding-bottom: 15px;
+}
+#ingredients .container .rightside .allingre p {
+    width: 430px;
+    height: 146px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Lato";
+    margin: 0 auto;    
+    padding-top: 30px;
+}
+#ingredients .container .rightside .allingre .ingred {
+    display: flex;
+    padding-top: 70px;
+    justify-content: center;
+    gap: 30px;
+}
+/* ingredients end */
+
+/* menu part start */
+#menu {
+    background-color: #e4e4e4;
+    background: url(../images/sec4patten.png) center center no-repeat;
+    background-size: cover;
+}
+#menu .container {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#menu .container .left-side-1,
+#menu .container .right-side-1 {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.container .left-side-1 .f-row h2, 
+.container .right-side-1 .f-row h2 {
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+    padding-bottom: 15px;
+}
+.container .left-side-1 .f-row .dec,
+.container .right-side-1 .f-row .dec {
+    text-align: center;
+}
+.container .left-side-1 .f-row .name-price,
+.container .right-side-1 .f-row .name-price {
+    display: flex;
+    justify-content: space-between;
+    max-width: 430px;
+    position: relative;
+}
+.container .left-side-1 .f-row .name-price::after,
+.container .right-side-1 .f-row .name-price::after {
+    content: '';
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px #c89f2d70 solid;
+}
+.container .left-side-1 .f-row .name-price h3,
+.container .right-side-1 .f-row .name-price h3 {
+    font-size: 21px;
+    color: #c89f2d;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+.container .left-side-1 .f-row p,
+.container .right-side-1 .f-row p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: "Yeseva One";
+}
+/* menu part end */
+
+/* reviews start */
+#reviews {
+    background: url(../images/s5-banner.png) center center no-repeat;
+    background-size: cover;
+}
+#reviews .container {
+    padding: 100px;
+}
+#reviews .container .reviews-info {
+    width: 770px;
+    height: 557px;
+    background-color: hsla(0, 0%, 0%, 0.67);
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px;
+}
+#reviews .container .reviews-info h3 {
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    padding-bottom: 15px;
+}
+#reviews .container .reviews-info p {
+    width: 630px;
+    font-size: 25px;
+    line-height: 45px;
+    color: #dde0df;
+    font-weight: 700;
+    font-family: "Gentium Book Basic";
+    text-align: center;
+}
+#reviews .container .reviews-info h5 {
+    font-size: 18px;
+    line-height: 45px;
+    color: #dde0df;
+    font-weight: 700;
+    font-family: "Gentium Book Basic";
+    text-align: center;
+    padding-top: 40px;
+}
+/* reviews end */
+
+/* booking start */
+#booking {
+    background: url(../images/sectowBGpatten.png) center center no-repeat;
+    background-size: cover;
+    background-color: #e4e4e4;
+}
+#booking .container {
+    padding: 100px 0 100px 0;
+    display: flex;
+    gap: 100px;
+}
+#booking .container .leftside {
+    display: flex;
+    gap: 30px;
+}
+#booking .container .rightside .info {
+    text-align: center;
+}
+#booking .container .rightside .info h3 {
+    font-size: 36px;
+    color: #cc9900;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    padding-bottom: 15px;
+}
+#booking .container .rightside .info p {
+    width: 432px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4c4c4c;
+    font-weight: 400;
+    font-family: "Lato";
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+/* booking form design start */
+#booking .container .rightside form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 45px 0 0 40px;
+}
+form .user-details .input-box {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 30px;
+}
+.user-details .input-box .details {
+    display: block;
+    font-size: 14px;
+    color: #c9a131;
+    font-weight: 700;
+    font-family: "Open Sans";
+    margin-bottom: 5px;
+}
+.user-details .input-box input {
+    width: 200px;
+    height: 35px;
+    outline-color: #c9a131;
+    border: 1px solid #dfe0e0;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 16px;
+    color: #7c7c7c;
+    font-weight: 400;
+    font-style: italic;
+    font-family: "Open Sans";
+    transition: all .3s linear;
+}
+form .button {
+    text-align: center;
+}
+form .button input {
+    height: 35px;
+    width: 200px;
+    outline: none;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-family: "Open Sans";
+    text-align: center;
+    background: linear-gradient(90deg, rgba(227,180,45,1) 25%, rgba(239,145,13,1) 61%);
+    border: none;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+form .button input:hover {
+    background: linear-gradient(-90deg, rgba(227,180,45,1) 25%, rgba(239,145,13,1) 61%);
+}
+/* booking form design start */
+/* booking end */
+
+/* footer start */
+#fotter {
+    background-color: #191919;
+}
+#fotter .container {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#fotter .container .ab-us,
+#fotter .container .open-time,
+#fotter .container .location {
+    text-align: center;
+}
+#fotter .container .ab-us h5,
+#fotter .container .open-time h5,
+#fotter .container .location h5 {
+    font-size: 21px;
+    line-height: 24px;
+    color: #fefefe;
+    font-weight: 400;
+    font-family: "Yeseva One";
+    text-align: center;
+    padding-bottom: 15px;
+}
+#fotter .container .ab-us p,
+#fotter .container .open-time p,
+#fotter .container .location p {
+    width: 370px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Open Sans";
+    text-align: center;
+    padding-top: 15px;
+}
+#fotter .container .open-time ul,
+#fotter .container .location ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 55px;
+    gap: 10px;
+}
+#fotter .container .open-time ul li a,
+#fotter .container .location ul li a {
+    color: #ffffff;
+    font-size: 18px;
+}
+/* footer end */
