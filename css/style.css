@@ -386,7 +386,7 @@ form .button input {
     background: linear-gradient(90deg, rgba(227,180,45,1) 25%, rgba(239,145,13,1) 61%);
     border: none;
     cursor: pointer;
-    transition: all .3s linear;
+    transition: all .3s ease;
 }
 form .button input:hover {
     background: linear-gradient(-90deg, rgba(227,180,45,1) 25%, rgba(239,145,13,1) 61%);
